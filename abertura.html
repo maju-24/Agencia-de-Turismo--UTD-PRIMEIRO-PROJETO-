@@ -23,13 +23,13 @@
     </nav>
     <h2> Buscar Passagem Aérea </h2>
     <p> A melhor tarifa está aqui! </p>
-    <main>
-        <section>
-            <form>
-                <div>
+    <main class="container">
+        <section id="busca"  class="card search-card">
+            <form id="flight-form" class="flight-form">
+                <div class="row">
                     <label> Origem: </label>
-                    <section> 
-                        <option> Selecione a cidade de origem </option>
+                    <select name="Origem" required> 
+                        <option value=""> Selecione a cidade de origem </option>
                         <option> Fortaleza </option>
                         <option> São Paulo </option>
                         <option> Rio de Janeiro </option>
@@ -38,10 +38,11 @@
                         <option> Buenos Aieres </option>
                         <option> Italia </option>
                         <option> Paris </option>
-                    </section>
+                    </select><br>
+                    <br>
                     <label> Destino: </label>
-                    <section>
-                        <option> Selecione a cidade de destino </option>
+                    <select name="destino" required>
+                        <option value=""> Selecione a cidade de destino </option>
                         <option> Rio de Janeiro </option>
                         <option> São Paulo </option>
                         <option> Fortaleza </option>
@@ -50,23 +51,32 @@
                         <option> Buenos Aieres </option>
                         <option> Italia </option>
                         <option> Paris </option>
-                    </section>
+                    </select><br>
+                    <br>
                 </div>
-                <div>
+                <div class="row">
                     <label> Ida: </label>
-                    <input type="date" name="ida" required>
+                    <input type="date" name="ida" required><br>
+                    <br>
                     <label> Volta: </label>
-                    <input type="date" name="volta">
+                    <input type="date" name="volta"><br>
+                    <br>
                     <label> Passageiros: </label>
-                    <input type="number" name="adultos" min="1" value="1">
+                    <input type="number" name="adultos" min="1" max="10" placeholder="Quantidade de Passageiros" value=""><br>
                 </div>
-                <div>
+                <br>
+                <div class="row">
                     <label> Classe: </label>
-                    <select>
+                    <select name="classe">
+                        <option>Selecione a classe que deseja </option>
                         <option> Economica </option>
                         <option> Executiva </option>
                     </select>
-                    <label><button type="button" id="search-btn" class="btn"> Buscar Voos </button></label>
+                    <br>
+                    <br>
+                    <label class="fullwidth">
+                        <button type="button" id="search-btn" class="btn"> Buscar Voos </button><br>
+                    </label>
                 </div>
             </form>
         </section>
