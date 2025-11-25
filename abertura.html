@@ -21,6 +21,55 @@
             <li><a href="Contatos.html"> Contatos </a></li>
         </ul>
     </nav>
-
+    <h2> Buscar Passagem Aérea </h2>
+    <p> A melhor tarifa está aqui! </p>
+    <main>
+        <section>
+            <form>
+                <div>
+                    <label> Origem: </label>
+                    <section> 
+                        <option> Selecione a cidade de origem </option>
+                        <option> Fortaleza </option>
+                        <option> São Paulo </option>
+                        <option> Rio de Janeiro </option>
+                        <option> Porto Alegre </option>
+                        <option> Santiago </option>
+                        <option> Buenos Aieres </option>
+                        <option> Italia </option>
+                        <option> Paris </option>
+                    </section>
+                    <label> Destino: </label>
+                    <section>
+                        <option> Selecione a cidade de destino </option>
+                        <option> Rio de Janeiro </option>
+                        <option> São Paulo </option>
+                        <option> Fortaleza </option>
+                        <option> Porto Alegre </option>
+                        <option> Santiago </option>
+                        <option> Buenos Aieres </option>
+                        <option> Italia </option>
+                        <option> Paris </option>
+                    </section>
+                </div>
+                <div>
+                    <label> Ida: </label>
+                    <input type="date" name="ida" required>
+                    <label> Volta: </label>
+                    <input type="date" name="volta">
+                    <label> Passageiros: </label>
+                    <input type="number" name="adultos" min="1" value="1">
+                </div>
+                <div>
+                    <label> Classe: </label>
+                    <select>
+                        <option> Economica </option>
+                        <option> Executiva </option>
+                    </select>
+                    <label><button type="button" id="search-btn" class="btn"> Buscar Voos </button></label>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
